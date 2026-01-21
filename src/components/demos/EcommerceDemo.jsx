@@ -3,7 +3,7 @@ import { ShoppingCart, Package, TrendingUp, Users } from 'lucide-react';
 import './Demos.css';
 
 const EcommerceDemo = () => {
-    const [stats, setStats] = useState([
+    const [stats] = useState([
         { title: '총 매출', value: '₩12,450,000', change: '+12%', icon: <TrendingUp /> },
         { title: '주문 수', value: '1,240', change: '+5%', icon: <ShoppingCart /> },
         { title: '신규 고객', value: '340', change: '+18%', icon: <Users /> },

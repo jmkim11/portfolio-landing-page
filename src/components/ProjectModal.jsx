@@ -3,10 +3,6 @@ import { X, Github, ExternalLink } from 'lucide-react';
 import './ProjectModal.css';
 
 const ProjectModal = ({ project, onClose }) => {
-    if (!project) return null;
-
-    const DemoComponent = project.demoComponent;
-
     // Prevent background scrolling when modal is open
     useEffect(() => {
         document.body.style.overflow = 'hidden';
@@ -14,6 +10,10 @@ const ProjectModal = ({ project, onClose }) => {
             document.body.style.overflow = 'unset';
         };
     }, []);
+
+    if (!project) return null;
+
+    const DemoComponent = project.demoComponent;
 
     return (
         <div className="modal-overlay" onClick={onClose}>
