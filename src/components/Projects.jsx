@@ -22,12 +22,16 @@ const Projects = () => {
                             <div className="card-header">
                                 <Folder size={40} className="folder-icon" />
                                 <div className="project-links">
-                                    <a href={project.github} onClick={e => e.stopPropagation()} aria-label="Github Link" target="_blank" rel="noopener noreferrer">
-                                        <Github size={20} />
+                                    <a
+                                        href={project.github}
+                                        onClick={e => e.stopPropagation()}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="github-link"
+                                        title="GitHub 저장소 보기"
+                                    >
+                                        <Github size={24} />
                                     </a>
-                                    {/* <a href={project.demo} onClick={e => e.stopPropagation()} aria-label="External Link" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={20} />
-                  </a> */}
                                 </div>
                             </div>
 
@@ -41,7 +45,7 @@ const Projects = () => {
                             </ul>
 
                             <div className="card-footer">
-                                <span className="learn-more">클릭하여 자세히 보기</span>
+                                <span className="learn-more">상세 정보 & 라이브 데모 <ExternalLink size={14} style={{ marginLeft: '4px', display: 'inline' }} /></span>
                             </div>
                         </div>
                     ))}

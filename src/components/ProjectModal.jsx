@@ -44,11 +44,11 @@ const ProjectModal = ({ project, onClose }) => {
 
                         <div className="modal-actions">
                             <a href={project.github} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                                <Github size={18} style={{ marginRight: '8px' }} /> GitHub
+                                <Github size={18} style={{ marginRight: '8px' }} /> GitHub 저장소
                             </a>
-                            {/* <a href={project.demo} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                <ExternalLink size={18} style={{marginRight: '8px'}} /> Live Demo
-              </a> */}
+                            <a href={project.demo} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                <ExternalLink size={18} style={{ marginRight: '8px' }} /> 서비스 바로가기
+                            </a>
                         </div>
                     </div>
                 </div>
